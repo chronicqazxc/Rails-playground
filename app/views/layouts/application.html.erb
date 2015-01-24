@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <style>
+  	.field_with_errors {
+  		background-color : #d1d1d1;
+  	}
+  </style>
+</head>
+<body>
+<h1>Hello, Rails!</h1>
+<%= link_to 'My Blog', controller: 'articles' %>
+<%= link_to 'New article', new_article_path %>
+<%= yield %>
+
+</body>
+</html>
